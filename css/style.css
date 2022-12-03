@@ -1,0 +1,234 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+.container{
+  width: 1170px;
+  margin: auto;
+}
+
+.row{
+display: flex;
+flex-wrap: wrap;
+}
+.align-center{
+  align-items: center;
+}
+:root{
+  --maincolor: #0f2f44;
+  --yellowcolor:#ffc712;
+  --primaryfont: 'Ubuntu', sans-serif;
+  --secondaryfont:'Open Sans', sans-serif;
+  --thirdfont:'Abril Fatface', cursive;
+}
+
+body{
+font-family: var(--primaryfont);
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+header{
+  background-color: var(--maincolor);
+  font-weight: 400;
+  font-size: 16px;
+  color: white;
+  padding: 19px 0;
+}
+header .welcome{
+  
+  width: 50%;
+}
+header .opening{
+
+  width: 50%;
+  text-align: center;
+}
+
+nav .logo{
+  
+  width: 30%;
+}
+nav .menu{
+
+  width: 70%;
+}
+.menu ul{
+    text-align: right;
+}
+.menu ul li{
+  display: inline-block;
+}
+.menu ul li a{
+  color: #222;
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 40px 20px;
+  display: inline-block;
+}
+.menu ul li:hover > a{
+   background-color: #fff9e6;
+   color: #ffc712;
+   transition: o.15s;
+}
+.menu .submenu{
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    background-color: #eee;
+    opacity: 0;
+    margin-top: 30px;
+    visibility: hidden;
+    transition: 0.20s;
+}
+.menu ul li:hover > .submenu{
+
+  opacity: 1;
+  margin-top: 0;
+  visibility: visible;
+
+}
+.menu .submenu li{
+   display: block;
+  }
+
+.menu .submenu li a{
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+.menu ul li a .downarrow{
+  transition: 0.3s;
+}
+.menu ul li a .downarrow{
+  transform: rotate(180deg);
+  display: inline-block;
+}
+
+#banner{
+  background-image: url(../image/banner\ \(2\).jpg);
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+#banner .row{
+  height: 600px;
+}
+
+#banner .banner_cnt h3{
+  font-weight: 400;
+  font-size: 30px;
+}
+#banner .banner_cnt h1{
+  font-family: var(--thirdfont);
+  font-weight: 400;
+  font-size: 80px;
+  text-transform: uppercase;
+  color: #0f2f44;
+}
+#banner .banner_cnt p{
+  font-size: 14px;
+  font-weight: 400;
+  
+}
+
+#banner .banner_cnt p span{
+     font-weight: 400;
+     font-size: 16px;
+     text-transform: capitalize;
+     color: #8484bf;
+    letter-spacing: 22px;
+    margin-bottom: 10px;
+  }
+#banner .banner_cnt a{
+
+    background-color: #8484bf;
+    color: white;
+    padding: 15px 20px;
+   display: inline-block;
+   margin-top: 10px;
+}
+#banner .banner_cnt2 p{
+  margin-top: 30px;
+  font-weight: 300;
+  font-size: 14px;
+}
+#banner .banner_cnt2 h3{
+   
+    font-family: var(--thirdfont);
+    font-size: 32px;
+    font-weight: 400;
+}
+
+#banner3{
+  margin: 30px;
+  width: 300px;
+  height: 30px;
+
+}
+#skill{
+
+  padding: 100px 0;
+}
+#skill .skillimg{
+   width: 50%;
+   
+}
+#skill .skillimg img{
+
+  width: 100%;
+
+}
+
+#skill .skillcnt{
+
+  width: 50%;
+}
+.skillcnt h6{
+
+  color: #0f2f44;
+}
+#skill{
+
+    text-align: right;
+
+}
+#skill .skillcnt > p{
+
+  font-size: 16px;
+  color: #0f2f44;
+  font-family: var(--secondaryfont);
+  margin: 30px 0;
+}
+.header h6{
+  text-align: center;
+}
+.header h2{
+  text-align: center;
+  color: #0f2f44;
+}
+#service{
+  background-color: #f5f5f5;
+  padding: 78px 0;
+}
+#service.box{
+
+  width: 33.33%;
+  background-color: lightblue;
+  gap: 15px;
+  height: 200px;
+  margin: 0 15px;
+
+  
+}
+
+
+
+
+
+
+
